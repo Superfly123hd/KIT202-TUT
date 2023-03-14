@@ -10,6 +10,7 @@ body {
     margin-right:auto;
     margin-left:auto;
     justify-content:center;
+    
 }
 
 /*
@@ -86,7 +87,8 @@ The following guidelines apply:
 - The paragraph text is 13px in size with a bottom margin of 10px. This also applies to the list.
 - The footer text size is 11px in the colour #555555. The text is centered.
 */
-main {
+#main {
+
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 15px;
@@ -138,6 +140,8 @@ You may need to define additional CSS rules to style the button colours
 */
 
 .btn {
+border: none;
+margin-top: 10px;
 padding-bottom: 10px;
 padding-top: 10px;
 padding-left: 15px;
@@ -145,6 +149,7 @@ padding-right: 15px;
 text-transform: uppercase;
 color: white;
 text-decoration: none;
+font-size: 13px;
 }
 #register{
     background-color:#b01818;
@@ -165,8 +170,10 @@ A class for a form element label
 - A 10px right margin applies to each label
 */
 .form-label {
-
-
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+    
 }
 
 /*
@@ -183,4 +190,7 @@ The box-sizing declaration controls how the browser calculates width and height 
 */
 .form-control {
     box-sizing: border-box;
+    font-size:12px;
+    margin: 2px, 0px, 2px, 0px;
+    width: 200px;
 }
