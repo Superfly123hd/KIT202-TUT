@@ -1,0 +1,186 @@
+/*
+- The background color is #c3c3c3
+- All content should be centered
+- The top margin is 50px and the left and right are automatic
+*/
+body {
+    margin-top: 50px;
+    background-color: #c3c3c3;
+    display: flex;
+    margin-right:auto;
+    margin-left:auto;
+    justify-content:center;
+}
+
+/*
+A 'wrapper' for all content
+
+- The background color is white
+- The font used for all container content should be Arial with fall back
+    to Helvetica and then whatever sans-serif font is available
+- The border radius on all corners is 10px
+- The bottom padding is 10px;
+- The max width is 800px
+*/
+#container {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+A class for an element to house the header image and page title
+*/
+header {
+    position: relative;
+    text-align: center;
+}
+
+/*
+Define a CSS rule for the header image (a child of the .header element)
+
+- To ensure the image is sized appropriately, its width should be 100%
+- The border radius on the top-left and top-right corner is 10px
+*/
+header img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/*
+A rule for the heading element within the header.
+
+- The heading should be positioned 'absolute' so that it can appear on top
+    of the background iamge.
+- The font size of the heading is 42px
+- The colour is white
+- The heading text should appear in all uppercase
+- The heading text should appear 15px above the bottom of the image
+    (hint: margin or padding)
+- The position of the heading within the .header element is 10px from the left and
+    0px from the bottom
+*/
+header h1 {
+    position: absolute;
+    font-size: 42px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    left: 10px;
+    bottom: 0px;
+}
+
+/*
+Define CSS rules for the main content of the page (i.e., what appears below the .header)
+
+The following guidelines apply:
+- The margin/padding around all content is 20px top and bottom and 15px left and right
+- The subheadings (h2) 'Information', 'Entry Fees', and 'Course Desc.' have top margins
+    of 30px and bottom margins of 5px. Their font size is 16px with text appearing in
+    bold uppercase. The colour is #045c88.
+- The paragraph text is 13px in size with a bottom margin of 10px. This also applies to the list.
+- The footer text size is 11px in the colour #555555. The text is centered.
+*/
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+label{
+    font-weight: bold;
+}
+#main.p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+#main.ul {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+#css{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #045c88;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer{
+    font-size: 11px;
+    color: #555555;
+    text-align: center;
+}
+/*
+A class to define the look of a button. This can be applied to button elements
+as well as hyperlinks.
+
+- Buttons should have no border
+- The padding of the button text is 10px top and bottom and 15px left and right
+- The button text is white, uppercase, and coloured white
+- There should be no other decoration visible on the button text (e.g., no underline)
+
+The 'Register' buttons should have:
+- A default background colour of #b01818
+- A mouse over background colour of #c04141
+
+The 'Cancel / Back' button should have:
+- A default background colour of #7c7c7c
+- A mouse over background colour of #929292
+
+You may need to define additional CSS rules to style the button colours
+*/
+
+.btn {
+padding-bottom: 10px;
+padding-top: 10px;
+padding-left: 15px;
+padding-right: 15px;
+text-transform: uppercase;
+color: white;
+text-decoration: none;
+}
+#register{
+    background-color:#b01818;
+}
+#register:hover {background-color:#929292 ;}
+#cancel{
+    background-color: #7c7c7c;
+}
+#cancel:hover{background-color:#929292 ;}
+
+
+
+
+/*
+A class for a form element label
+
+- The font size of the label is 12px, and the text should be bold
+- A 10px right margin applies to each label
+*/
+.form-label {
+
+
+}
+
+/*
+A class for a form input element (includes <input> and <select>)
+
+- The font size of the input is 12px
+- The margin around each input element should be 2px top and bottom (0px left and right)
+- The width of each input element is 200px
+
+The box-sizing declaration controls how the browser calculates width and height values of
+    an element. A value of 'border-box' will include and border and padding values in the
+    calculation. This makes is easier to consitently size <input> and <select> elements.
+    More info: https://www.w3schools.com/css/css3_box-sizing.asp
+*/
+.form-control {
+    box-sizing: border-box;
+}
