@@ -83,7 +83,17 @@ act2_task4.innerHTML = determineWinner(kangaroos_average4,gumtrees_average4);
 
 // Activity 3: Write your code for each task below.
 // Task 1
-
+function calculateTax(income) {
+    let tax_amount = 0;
+    if (income <= 60000) {
+        tax_amount = income*0.26;
+    } else if (income <= 90000) {
+        tax_amount = income*0.33
+    } else {
+        tax_amount = income*0.39
+    } return tax_amount;
+}
+console.log(calculateTax(45000))
 
 // Task 2
 
