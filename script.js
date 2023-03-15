@@ -93,11 +93,44 @@ function calculateTax(income) {
         tax_amount = income*0.39
     } return tax_amount;
 }
-console.log(calculateTax(45000))
+console.log(calculateTax(45000));
 
 // Task 2
-
-
+let henry_income = 58500;
+let taylor_income = 75000;
+let amanda_income = 143800;
+const act3_task2a = document.getElementById("activity3-task2a");
+const act3_task2b = document.getElementById("activity3-task2b");
+const act3_task2c = document.getElementById("activity3-task2c");
+//henry
+act3_task2a.innerHTML = "For a taxable income of $" + henry_income + ", the tax amount is $"+calculateTax(henry_income)+" and the income after tax is $"+(henry_income-calculateTax(henry_income));
+//taylar
+act3_task2b.innerHTML = "For a taxable income of $" + taylor_income + ", the tax amount is $"+calculateTax(taylor_income)+" and the income after tax is $"+(taylor_income-calculateTax(taylor_income));
+//amanda
+act3_task2c.innerHTML = "For a taxable income of $" + amanda_income + ", the tax amount is $"+calculateTax(amanda_income)+" and the income after tax is $"+(amanda_income-calculateTax(amanda_income));
 
 // Activity 4: Write your code below.
+let taxableIncomes = [85400, 78000, 98200, 50000, 47930, 116500, 84000, 146300, 67000, 61550];
+let taxes = [];
+let netIncomes = [];
+function calculate_tax_netIncome (taxableIncomes, taxes, netIncomes) {
+for (let i = 0; i < taxableIncomes.length; i++) {
+    taxes[i]=calculateTax(taxableIncomes[i])
+    netIncomes[i]= taxableIncomes[i]-taxes[i];
+} 
+return taxes, netIncomes;
+}
+taxes, netIncomes = calculate_tax_netIncome(taxableIncomes, taxes, netIncomes);
+const act4_task4a = document.getElementById("activity4a");
+act4_task4a.innerHTML = taxes + ", " + netIncomes;
 
+function calculateAverageArr(arr) {
+    let sum = 0;
+    counter = 0
+    for (counter = 0; counter < arr.length; counter++) {
+        sum = arr[counter] + sum;
+    }
+    return average = sum/arr.length;
+}
+const act4_task4b = document.getElementById("activity4b");
+act4_task4b.innerHTML = calculateAverageArr(taxes);
