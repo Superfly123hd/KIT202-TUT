@@ -1,45 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="author" content="Anh Quan Doan">
-        <title>Marathon 2023</title>
-    </head>
-    <body>
-        <div id="container">
-        <header>
-        <img src="images/london_marathon.png">
-        <h1> Marathon 2023</h1>
-        </header>
-
-        <div id = "main">
-        <a id = "register" class = "btn" href="registration.html"> Registration</a>
-        <h2 id="css">Information</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com-
-            modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pari-atur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est labo-rum.
-        </p>
-        <h2 id="css">Entry fees</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit:
-            <ul>
-                <li>Lorem</li> 
-                <li>Impsum</li>
-                <li>Dolor</li>
-            </ul>
-        </p>
-        <h2 id = "css">Course Description</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com-
-            modo consequat.
-        </p>
-        </div>
-        <footer>KIT202 Tutorial 1 | Marathon 2023</footer>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="[Your Name]">
+    <link rel="stylesheet" href="style.css" />
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <main>
+      <h1>Guess a number between 1 and 30</h1>
+      <div id="number">?</div>
+      <input type="number" min="1" max="30" id="guess" />
+      <button id="checkBtn">Check!</button>
+      <p class="status" id="message">Enter a number</p>
+      <p class="status"> Remaining guesses: <strong><span id="remainingGuesses">10</span></strong></p>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
 </html>
