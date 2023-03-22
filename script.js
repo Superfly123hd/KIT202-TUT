@@ -122,7 +122,7 @@ return taxes, netIncomes;
 }
 taxes, netIncomes = calculate_tax_netIncome(taxableIncomes, taxes, netIncomes);
 const act4_task4a = document.getElementById("activity4a");
-act4_task4a.innerHTML = taxes + ", " + netIncomes;
+act4_task4a.innerHTML = taxes[6] + ", " + netIncomes[6];
 
 function calculateAverageArr(arr) {
     let sum = 0;
